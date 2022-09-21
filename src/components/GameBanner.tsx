@@ -1,6 +1,6 @@
 interface GameBannerProps {
-  bannerUrl: string;
   title: string;
+  bannerUrl: string;
   adsCount: number;
 }
 
