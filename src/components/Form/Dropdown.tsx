@@ -33,7 +33,7 @@ export function Dropdown() {
             {games.map((game) => {
               return (
                 <Select.Item
-                  className="focus:cursor-default focus:bg-purple-400"
+                  className="focus:cursor-default focus:bg-purple-400 rounded-sm pl-1"
                   value={game.id}
                 >
                   <Select.ItemText>{game.title}</Select.ItemText>
