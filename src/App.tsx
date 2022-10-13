@@ -5,7 +5,7 @@ import logoImg from "./assets/logo-nlw-esports.svg";
 import { GameBanner } from "./components/GameBanner";
 import { CreateAdBanner } from "./components/CreateAdBanner";
 import { GameController } from "phosphor-react";
-import { Input } from "./components/Form/input";
+import { Input } from "./components/Form/Input";
 
 interface Game {
   id: string;
@@ -139,7 +139,7 @@ function App() {
                 </div>
                 <div className="flex flex-col gap-2 flex-1">
                   <label htmlFor="hoursStart">Qual horário do dia?</label>
-                  <div className="grid grid-col-2 gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <Input id="hoursStart" type="time" placeholder="De" />
                     <Input id="hoursEnd" type="time" placeholder="Até" />
                   </div>
