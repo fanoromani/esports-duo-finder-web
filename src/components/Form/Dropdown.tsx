@@ -19,7 +19,7 @@ export function Dropdown() {
   }, []);
 
   return (
-    <Select.Root>
+    <Select.Root name="game">
       <Select.Trigger className="text-zinc-500 bg-zinc-900 py-3 px-4 rounded text-sm flex justify-between items-center">
         <Select.Value placeholder="Selecione o game que deseja jogar" />
         <Select.Icon>
@@ -33,6 +33,7 @@ export function Dropdown() {
             {games.map((game) => {
               return (
                 <Select.Item
+                  key={game.id}
                   className="focus:cursor-default focus:bg-purple-400 rounded-sm pl-1"
                   value={game.id}
                 >
